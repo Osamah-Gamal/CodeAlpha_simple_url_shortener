@@ -27,7 +27,7 @@ async function shortenUrl() {
         if (data.success) {
             originalUrlSpan.textContent = data.originalUrl;
             shortUrlLink.textContent = data.shortUrl;
-            shortUrlLink.href = data.originalUrl;
+            shortUrlLink.href = data.shortUrl;
             resultDiv.style.display = 'block';
             urlInput.value = '';
             
